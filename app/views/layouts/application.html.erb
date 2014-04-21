@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>中国观念组织联合行动平台</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="container">
+    <%= render 'layouts/header' %>
+
+
+    <main>
+      <div class="content"><%= yield %></div>      
+      <%= render 'layouts/sidebar' %>
+    </main>
+
+
+    <%= render 'layouts/footer' %>
+  </div>
+
+
+</body>
+</html>
