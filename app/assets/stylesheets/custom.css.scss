@@ -1,0 +1,79 @@
+body {
+  background: url(http://rosefench.net/images/bj.jpg);
+}
+
+.container {
+  width: 990px;
+  margin: auto;
+}
+
+// header
+#logo {
+  background: url(http://rosefench.net/images/logo.jpg) no-repeat;
+  height: 72px;
+  a {
+    display: block;
+    width: 478px;
+    height: 72px;
+    text-indent: -9000px;
+  }
+  margin: 10px auto 10px;
+}
+
+nav#navbar {
+  // background-color: HSL(104, 52%, 50%);
+  background-image: linear-gradient(to bottom, HSL(104, 52%, 50%), HSL(126, 82%, 32%));
+  border: 1px solid RGB(12, 147, 45);
+  border-bottom: none;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 1px 1px 0 0 RGBA(129, 222, 69, 1);
+  -moz-box-shadow: inset 1px 1px 0 0 RGBA(129, 222, 69, 1);
+  box-shadow: inset 1px 1px 0 0 RGBA(129, 222, 69, 1);
+
+  padding: 10.5px 0;
+  text-align: center;
+  a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 -1px 1px black;
+    &:hover { text-decoration: none; }
+  }
+}
+
+// main
+main {
+  background: RGBA(245, 242, 237, 1);
+  border-radius: 5px;
+  margin: 10px 0;
+  overflow: hidden;
+  .content {
+    box-sizing: border-box;
+    padding: 10px;
+    background: white;
+    width: 739px;
+    float: left;
+    border-radius: 5px;
+  }
+  aside {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 251px;
+    height: 100%;
+    float: left;
+
+  }
+
+}
+
+
+
+// footeer
+.footer {
+  margin: 40px auto;
+  text-align: center;
+  p {
+    font-size: 12px;
+    color: #716c61;
+  }
+}
