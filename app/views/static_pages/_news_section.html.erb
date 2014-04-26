@@ -1,0 +1,11 @@
+<div class="title">
+  <span class="name pull-left"><%= name %></span>
+  <span class="more pull-right">更多..</span>
+</div>
+<div class="list">
+  <ul>
+    <% list[0..4].each do |item| %>
+    <li><%= link_to item.text, item[:href] %></li>
+    <% end %>
+  </ul>
+</div>

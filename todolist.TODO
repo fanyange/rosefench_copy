@@ -1,0 +1,18 @@
+## Experiences
+1. 还是要先计划好开发大框架
+2. gridism 的确好用，以后要多用啊
+
+- 前端
+  ✔ 开发完首页，使用 nomalize 和 gridism @done (14-04-26 23:43)
+  ☐ 加上一点 bourbon or compass
+  ☐ sidebar
+  ☐ slideshow
+  ☐ more js
+
+- 后端
+  ☐ user database
+    ☐ signup
+    ☐ signin
+  ☐ posts database
+  ☐ image storage
+  ☐ record database

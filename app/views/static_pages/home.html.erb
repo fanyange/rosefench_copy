@@ -1,0 +1,15 @@
+<div class="grid">
+  <div class="unit w-3-5 slideshow">
+    <img src="http://rosefench.net/news/1396422049.jpg" alt="old man">
+  </div>
+  <div class="unit w-2-5 flash-news">
+    <%= render partial: "news_section", locals: {name: @names.shift, list: @lists.shift} %>
+  </div>
+</div>
+<div class="grid gutter">
+    <% @lists.each_with_index do |list,index| %>
+    <div class="unit half">
+      <%= render partial: "news_section", locals: { list: list, name: @names[index] } %>
+    </div>
+    <% end %>
+</div>
