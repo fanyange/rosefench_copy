@@ -28,7 +28,3 @@ function equalHeights (element1, element2) {
     element1.css('height', height);
   }
 }
-
-$(document).ready(function() {
-  equalHeights($('.content'), $('aside'));
-});
