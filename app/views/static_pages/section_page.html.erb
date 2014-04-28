@@ -1,0 +1,12 @@
+<div class="title">
+  <span class="name pull-left"><%= @section.name %></span>
+  <span class="more pull-right">当前位置: 首页 > <%= @section.name %></span>
+</div>
+<div class="list dashed">
+  <ul>
+    <li><%= @request %> <span class="pull-right"><%= Time.now %></span></li>
+    <% @section.posts.each do |post| %>
+    <li><%= link_to post.title, post.content %> <span class="pull-right"><%= post.created_at.strftime("%Y-%-m-%-d") %></span></li>
+    <% end %>
+  </ul>
+</div>

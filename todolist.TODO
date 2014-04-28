@@ -8,11 +8,13 @@ Experiences:
   2. rake assets:prepare
   3. db
   4. production.rb >> config.serve_static_assets = true
+6. 尽最大努力，不去用元编程
 
 前端:
   ✔ 开发完首页，使用 nomalize 和 gridism @done (14-04-26 23:43)
   ☐ 加上一点 bourbon or compass
   ✔ sidebar @done (14-04-27 12:52)
+  ✔ section show action @done (14-04-28 23:04)
   ☐ slideshow
   ☐ more js
 
@@ -23,6 +25,7 @@ Experiences:
   ✔ posts database @done (14-04-27 17:29)
   ✘ image storage @cancelled (14-04-27 17:30)
   ☐ record database
+  ☐ pretty url
 
 读书:
   ☐ Rails Tutorial
