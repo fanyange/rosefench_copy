@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  resources :users
+  match '/signup', to: 'users#new', via: 'get'
   root 'static_pages#home'
-  match '/sections/:id', to: 'static_pages#section_page', via: 'get', as: 'section_path'
+  match '/sections/:id', to: 'static_pages#section_page', via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
