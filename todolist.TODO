@@ -9,6 +9,8 @@ Experiences:
   3. db
   4. production.rb >> config.serve_static_assets = true
 6. 尽最大努力，不去用元编程
+7. field_with_errors
+8. @models.errors.full_messages
 
 前端:
   ✔ 开发完首页，使用 nomalize 和 gridism @done (14-04-26 23:43)
@@ -20,8 +22,9 @@ Experiences:
 
 后端:
   ☐ user database
-    ☐ signup
+    ✔ signup @done (14-04-30 00:36)
     ☐ signin
+    ☐ authorization
   ✔ posts database @done (14-04-27 17:29)
   ✘ image storage @cancelled (14-04-27 17:30)
   ☐ record database

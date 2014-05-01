@@ -1,10 +1,10 @@
 <div class="title">
-  <span class="name pull-left"><%= Section.find(section_id).name %></span>
+  <span class="name pull-left"><%= Section.find_by(origin_id: origin_id).name %></span>
   <span class="more pull-right">更多..</span>
 </div>
 <div class="list">
   <ul>
-    <% Section.find(section_id).posts.limit(5).each do |post| %>
+    <% Section.find_by(origin_id: origin_id).posts.limit(5).each do |post| %>
     <li><%= link_to post.title, post.content %></li>
     <% end %>
   </ul>

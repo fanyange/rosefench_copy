@@ -1,38 +1,36 @@
 <div class="signup">
-<h1 class="align-center">Sign up</h1>
+  <h1 class="align-center">Sign up</h1>
 
   <%= form_for(@user) do |f| %>
 
   <div class="grid">
-    <unit class="unit w-2-5"><%= f.label :email %></unit>
-    <div class="unit w-3-5">
-      <%= f.email_field :email %></div>
-    </div>
-    <div class="grid">
+    <div class="unit w-2-5"><%= f.label :email %></div>
+    <div class="unit w-3-5"><%= f.email_field :email %></div>
+  </div>
+  <div class="grid">
 
-      <unit class="unit w-2-5"><%= f.label :name %></unit>
-      <div class="unit w-3-5"><%= f.text_field :name %></div>
-    </div>
+    <unit class="unit w-2-5"><%= f.label :name %></unit>
+    <div class="unit w-3-5"><%= f.text_field :name %></div>
+  </div>
 
-    <div class="grid">
+  <div class="grid">
 
-      <unit class="unit w-2-5"><%= f.label :password %></unit>
-      <div class="unit w-3-5"><%= f.password_field :password %></div>
-    </div>
+    <unit class="unit w-2-5"><%= f.label :password %></unit>
+    <div class="unit w-3-5"><%= f.password_field :password %></div>
+  </div>
 
-    <div class="grid">
+  <div class="grid">
 
-      <unit class="unit w-2-5"><%= f.label :password_confirmation %></unit>
-      <div class="unit w-3-5"><%= f.password_field :password_confirmation %></div>
-    </div>
-    <div class="grid">
-      <div class="unit"></div>
-    </div>
+    <unit class="unit w-2-5"><%= f.label :password_confirmation %></unit>
+    <div class="unit w-3-5"><%= f.password_field :password_confirmation %></div>
+  </div>
+  <div class="grid">
+    <div class="unit"></div>
+  </div>
 
-    <div class="grid">
-      <div class="unit w-2-5"></div>
-      <div class="unit w-3-5"><%= f.submit "Create an account" %></div>
-    </div>
+  <div class="grid">
+    <div class="unit w-2-5"></div>
+    <div class="unit w-3-5"><%= f.submit "Create an account" %></div>
   </div>
   <% end %>
 </div>
