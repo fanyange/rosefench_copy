@@ -15,3 +15,6 @@ function equalHeights (element1, element2) {
 $(document).ready(function() {
   equalHeights($('.content'), $('aside'));
 });
+$(document).on('page:load', function() {
+  equalHeights($('.content'), $('aside'))
+});

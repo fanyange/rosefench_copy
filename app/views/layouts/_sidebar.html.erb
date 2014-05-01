@@ -1,3 +1,4 @@
+<% bird_names = Rails.root.join('lib','resources','bird_names.txt').read.split("\n") %>
 <aside class="unit">
   <div class="search">
     <form action="">
@@ -9,6 +10,9 @@
         <div class="unit w-4-5">
           <select name="bird" id="bird">
             <option>请选择鸟名</option>
+            <% bird_names.each do |n| %>
+            <option><%= n %></option>
+            <% end %>
           </select>
         </div>
       </div>

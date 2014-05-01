@@ -9,8 +9,10 @@ Experiences:
   3. db
   4. production.rb >> config.serve_static_assets = true
 6. 尽最大努力，不去用元编程
+7. 分段解决问题，每次只专注细化一个问题，其余皆概化+快速迭代
 7. field_with_errors
 8. @models.errors.full_messages
+9. turbo-links' $(document).ready
 
 前端:
   ✔ 开发完首页，使用 nomalize 和 gridism @done (14-04-26 23:43)
