@@ -12,28 +12,31 @@
           </select>
         </div>
       </div>
-      <div class="grid">
-        <div class="unit w-1-5">
-          <label for="place">地名：</label>
-        </div>
-        <div class="unit w-4-5">
-          <div class="grid">
-            <div class="unit"><select name="" id="">
-              <option value="">请选择省</option>
-            </select></div>
+      <div class="city-group">
+        <div class="grid">
+          <div class="unit w-1-5">
+            <label for="place">地名：</label>
           </div>
-          <div class="grid">
-            <div class="unit"><select name="" id="">
-              <option value="">请选择市</option>
-            </select></div>
-          </div>
-          <div class="grid">
-            <div class="unit"><select name="" id="">
-              <option value="">请选择县</option>
-            </select></div>
-          </div>
-          <div class="grid">
-            <unit><input type="submit" value="搜索"></unit>
+          <div class="unit w-4-5">
+            <div class="grid">
+              <div class="unit"><select class="city-select">
+                <option value="">请选择省</option>
+                <%= options_for_select(ChinaCity.list) %>
+              </select></div>
+            </div>
+            <div class="grid">
+              <div class="unit"><select class="city-select">
+                <option value="">请选择市</option>
+              </select></div>
+            </div>
+            <div class="grid">
+              <div class="unit"><select class="city-select">
+                <option value="">请选择地区</option>
+              </select></div>
+            </div>
+            <div class="grid">
+              <unit><input type="submit" value="搜索"></unit>
+            </div>
           </div>
         </div>
       </div>

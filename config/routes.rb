@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   match '/signup', to: 'users#new', via: 'get'
   root 'static_pages#home'
   match '/sections/:id', to: 'static_pages#section_page', via: 'get'
+  mount ChinaCity::Engine => '/china_city'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

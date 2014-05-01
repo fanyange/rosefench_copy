@@ -26,6 +26,16 @@ padding-top: 3px;
     border: 1px solid #cfcdc5;
     height: 20px;
   }
+  #hidden-submit {
+    padding: 0;
+    margin: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 // header
