@@ -1,0 +1,11 @@
+<div class="title">
+  <span class="name pull-left"><%= section.name %></span>
+  <span class="more pull-right"><%= link_to "更多..", section %></span>
+</div>
+<div class="list">
+  <ul>
+    <% section.posts.limit(5).each do |post| %>
+    <li><%= link_to post.title, post.content %></li>
+    <% end %>
+  </ul>
+</div>

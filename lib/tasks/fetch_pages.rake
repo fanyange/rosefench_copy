@@ -3,10 +3,10 @@ require 'open-uri'
 namespace :task do
   desc "create pages sections and store them in database"
   task :create_sections => :environment do
-    section_names = %W[鸟会动态 快讯 项目 鸟人学堂 鸟类观察]
-    [1,2,3,5,6].each_with_index do |id, index|
+    section_names = %W[快讯 鸟会动态 项目 鸟人学堂 鸟类观察]
+    [2,1,3,5,6].each_with_index do |origin_id, index|
       name = section_names[index]
-      Section.create(name: name, origin_id: id) unless Section.find_by(name: name)
+      Section.create(name: name, origin_id: origin_id) unless Section.find_by(name: name)
     end
   end
 

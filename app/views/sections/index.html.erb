@@ -1,0 +1,14 @@
+  <div class="grid">
+  <div class="unit w-3-5 slideshow">
+    <img src="http://rosefench.net/news/1396422049.jpg" alt="old man">
+  </div>
+  <% @sections.each_with_index do |section, i| %>
+    <div class="unit <%= i == 0 ? 'w-2-5' : 'half' %> section-<%= i+1 %>">
+    <%= render partial: "section", locals: {section: section} %>
+    </div>
+    <% if i.even? && i < @sections.size %>
+    </div>
+    <div class="grid">
+    <% end %>
+    <% end %>
+</div>
