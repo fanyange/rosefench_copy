@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   resources :sections, only: [:show]
+  resources :sessions, only: [:create]
   resources :users
   root 'sections#index'
   match '/signup', to: 'users#new', via: 'get'
+  get '/login', to: 'sessions#new'
+  delete '/logout', to: 'sessions#destroy'
   mount ChinaCity::Engine => '/china_city'
 
   # The priority is based upon order of creation: first created -> highest priority.

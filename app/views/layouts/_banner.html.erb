@@ -1,15 +1,23 @@
 <div class="banner">
   <div class="container">
     <div class="info pull-left">欢迎访问中国观鸟组织联合行动平台网站！</div>
-    <div class="signin pull-right">
-      <form id="signin" action="/signin" method="post">
-        <label for="username">用户名：</label>
-        <input id="username" name="username" type="text">
-        <label for="password">密码：</label>
-        <input id="password" name="password" type="password">
-        <input id="hidden-submit" type="submit" value="Submit">
-        <a href="javascript:{}" onclick="document.getElementById('signin').submit();return false;">登录</a> | <a href="/signup">注册</a>
-      </form>
-    </div>
+    <div class="login pull-right">
+    <% if signed_in? %>
+    <%= link_to current_user.name, current_user %>
+    |
+    <%= link_to "退出", logout_path, method: :delete %>
+    <% else %>
+    <%= form_for :session, url: sessions_path, html: { id: 'login' } do |f| %>
+    <%= f.label :email, "电子邮箱："  %>
+    <%= f.email_field :email %>
+    <%= f.label :password, "密码：" %>
+    <%= f.password_field :password %>
+    <%= f.submit id: "hidden-submit" %>
+    <%= link_to "登录", 'javascript:{}', onclick: "document.getElementById('login').submit();return false;" %>
+    |
+    <%= link_to "注册", signup_path %>
+    <% end %>
+    <% end %>
   </div>
+</div>
 </div>

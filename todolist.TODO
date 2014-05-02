@@ -13,6 +13,7 @@ Experiences:
 7. field_with_errors
 8. @models.errors.full_messages
 9. turbo-links' $(document).ready
+10. 数据库加密（密文存储）：不让你反推出钥匙
 
 前端:
   ✔ 开发完首页，使用 nomalize 和 gridism @done (14-04-26 23:43)
@@ -21,6 +22,7 @@ Experiences:
   ✔ section show action @done (14-04-28 23:04)
   ☐ slideshow
   ☐ more js
+  ☐ notification center
 
 后端:
   ☐ user database
