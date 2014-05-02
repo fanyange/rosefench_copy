@@ -1,0 +1,40 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+equalHeights	app/assets/javascripts/height_align.js	/^function equalHeights (element1, element2) {$/;"	f
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+SectionsController	app/controllers/sections_controller.rb	/^class SectionsController < ApplicationController$/;"	c
+index	app/controllers/sections_controller.rb	/^  def index$/;"	f	class:SectionsController
+show	app/controllers/sections_controller.rb	/^  def show$/;"	f	class:SectionsController
+UsersController	app/controllers/users_controller.rb	/^class UsersController < ApplicationController$/;"	c
+create	app/controllers/users_controller.rb	/^  def create$/;"	f	class:UsersController
+new	app/controllers/users_controller.rb	/^  def new$/;"	f	class:UsersController
+show	app/controllers/users_controller.rb	/^  def show$/;"	f	class:UsersController
+user_params	app/controllers/users_controller.rb	/^  def user_params$/;"	f	class:UsersController
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+SectionsHelper	app/helpers/sections_helper.rb	/^module SectionsHelper$/;"	m
+UsersHelper	app/helpers/users_helper.rb	/^module UsersHelper$/;"	m
+Post	app/models/post.rb	/^class Post < ActiveRecord::Base$/;"	c
+Section	app/models/section.rb	/^class Section < ActiveRecord::Base$/;"	c
+User	app/models/user.rb	/^class User < ActiveRecord::Base$/;"	c
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:Rosefench
+Rosefench	config/application.rb	/^module Rosefench$/;"	m
+CreatePosts	db/migrate/20140427071823_create_posts.rb	/^class CreatePosts < ActiveRecord::Migration$/;"	c
+change	db/migrate/20140427071823_create_posts.rb	/^  def change$/;"	f	class:CreatePosts
+CreateSections	db/migrate/20140427074617_create_sections.rb	/^class CreateSections < ActiveRecord::Migration$/;"	c
+change	db/migrate/20140427074617_create_sections.rb	/^  def change$/;"	f	class:CreateSections
+AddSectionIdToPosts	db/migrate/20140427074725_add_section_id_to_posts.rb	/^class AddSectionIdToPosts < ActiveRecord::Migration$/;"	c
+change	db/migrate/20140427074725_add_section_id_to_posts.rb	/^  def change$/;"	f	class:AddSectionIdToPosts
+RemoveSectionFromPosts	db/migrate/20140427081047_remove_section_from_posts.rb	/^class RemoveSectionFromPosts < ActiveRecord::Migration$/;"	c
+change	db/migrate/20140427081047_remove_section_from_posts.rb	/^  def change$/;"	f	class:RemoveSectionFromPosts
+AddIndexToPostsSectionId	db/migrate/20140427095530_add_index_to_posts_section_id.rb	/^class AddIndexToPostsSectionId < ActiveRecord::Migration$/;"	c
+change	db/migrate/20140427095530_add_index_to_posts_section_id.rb	/^  def change$/;"	f	class:AddIndexToPostsSectionId
+AddImageUrlToPosts	db/migrate/20140429134119_add_image_url_to_posts.rb	/^class AddImageUrlToPosts < ActiveRecord::Migration$/;"	c
+change	db/migrate/20140429134119_add_image_url_to_posts.rb	/^  def change$/;"	f	class:AddImageUrlToPosts
+CreateUsers	db/migrate/20140429135649_create_users.rb	/^class CreateUsers < ActiveRecord::Migration$/;"	c
+change	db/migrate/20140429135649_create_users.rb	/^  def change$/;"	f	class:CreateUsers
+AddPasswordDigestToUsers	db/migrate/20140429143810_add_password_digest_to_users.rb	/^class AddPasswordDigestToUsers < ActiveRecord::Migration$/;"	c
+change	db/migrate/20140429143810_add_password_digest_to_users.rb	/^  def change$/;"	f	class:AddPasswordDigestToUsers
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/

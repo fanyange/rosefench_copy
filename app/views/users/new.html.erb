@@ -1,6 +1,18 @@
 <div class="signup">
   <h1 class="align-center">Sign up</h1>
 
+  <% if @user.errors.any? %>
+  <div class="grid">
+    <div class="unit whole">
+      <div class="error-details">
+        <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+
   <%= form_for(@user) do |f| %>
 
   <div class="grid">

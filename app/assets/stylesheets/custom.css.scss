@@ -230,11 +230,36 @@ main {
   }
 }
 
-// miscellaneous
+// signup page
 
 .field_with_errors {
   color: red;
   input {
     border: 1px solid red;
+  }
+}
+
+.error-details {
+  padding: 20px;
+  color: red;
+  border: 1px dotted red;
+}
+
+.flash {
+  float: left;
+  width: 15%;
+  .success {
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    color: #3c763d;
+    font-size: 12px;
+    padding: 15px;
+  }
+  .warning {
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    color: #3c763d;
+    font-size: 12px;
+    padding: 15px;
   }
 }

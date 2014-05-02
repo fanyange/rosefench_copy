@@ -18,5 +18,6 @@ doc/
 .DS_Store
 .idea
 .secret
+.tags
 
 public/assets
