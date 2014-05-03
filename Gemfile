@@ -27,4 +27,6 @@ end
 gem 'nokogiri'
 gem 'china_city'
 gem 'compass-rails'
+
+gem 'unicorn'
 # gem 'jquery-turbolinks'
