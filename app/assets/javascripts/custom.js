@@ -22,18 +22,18 @@ $(function() {
 $(document).ready(function() {
   equalHeights($('.content'), $('aside'));
 });
-$(document).on('page:load', function() {
-  equalHeights($('.content'), $('aside'))
-});
+// $(document).on('page:load', function() {
+//   equalHeights($('.content'), $('aside'))
+// });
+
 
 $(document).ready(function() {
   $('#login').on('click', 'a:first-of-type', function() {
     $('#login').submit();
   })
 });
-
-$(document).on('page:load', function() {
-  $('#login').on('click', 'a:first-of-type', function() {
-    $('#login').submit();
-  })
-});
+// $(document).on('page:load', function() {
+//   $('#login').on('click', 'a:first-of-type', function() {
+//     $('#login').submit();
+//   })
+// });
