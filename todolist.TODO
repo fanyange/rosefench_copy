@@ -18,10 +18,12 @@ Experiences:
 前端:
   ✔ 开发完首页，使用 nomalize 和 gridism @done (14-04-26 23:43)
   ☐ 加上一点 bourbon or compass
+    ☐ css sprites
+  ☐ slideshow
+    ☐ slidejs
   ✔ sidebar @done (14-04-27 12:52)
   ✔ section show action @done (14-04-28 23:04)
-  ☐ slideshow
-  ☐ more js
+  ☐ more js(I'd better make some views to be a single-page app)
   ☐ notification center
 
 后端:

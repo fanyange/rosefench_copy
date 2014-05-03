@@ -13,7 +13,7 @@
     <%= f.label :password, "密码：" %>
     <%= f.password_field :password %>
     <%= f.submit id: "hidden-submit" %>
-    <%= link_to "登录", 'javascript:{}', onclick: "document.getElementById('login').submit();return false;" %>
+    <%= link_to "登录", '#' %>
     |
     <%= link_to "注册", signup_path %>
     <% end %>
