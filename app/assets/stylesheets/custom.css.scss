@@ -24,7 +24,7 @@ a {
     padding-top: 3px;
   }
   padding: 5px inherit;
-  background-color: #f4f4f4;
+  background-color: rgba(244, 244, 244, 0.7);
   input {
     width: 75px;
     border-radius: 3px;
@@ -62,7 +62,7 @@ nav#navbar {
   @include background-image(linear-gradient(#61c23d, #0f951c));
   border: 1px solid RGB(12, 147, 45);
   border-bottom: none;
-  border-radius: 5px;
+  @include border-radius(5px);
   @include single-box-shadow(#81de45, 1px, 1px, 0, 0, inset);
 
   padding: 10.5px 0;
