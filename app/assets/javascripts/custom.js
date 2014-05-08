@@ -27,11 +27,11 @@ $(document).ready(function() {
 // });
 
 
-$(document).ready(function() {
-  $('#login').on('click', 'a:first-of-type', function() {
-    $('#login').submit();
-  })
-});
+// $(document).ready(function() {
+//   $('#login').on('click', 'a:first-of-type', function() {
+//     $('#login').submit();
+//   })
+// });
 // $(document).on('page:load', function() {
 //   $('#login').on('click', 'a:first-of-type', function() {
 //     $('#login').submit();

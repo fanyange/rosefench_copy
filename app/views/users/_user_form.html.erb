@@ -1,0 +1,44 @@
+<% if @user.errors.any? %>
+  <div class="grid">
+    <div class="unit whole">
+      <div class="error-details">
+        <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <% end %>
+
+  <%= form_for(@user) do |f| %>
+
+  <div class="grid">
+    <div class="unit w-2-5"><%= f.label :email %></div>
+    <div class="unit w-3-5"><%= f.email_field :email %></div>
+  </div>
+  <div class="grid">
+
+    <unit class="unit w-2-5"><%= f.label :name %></unit>
+    <div class="unit w-3-5"><%= f.text_field :name %></div>
+  </div>
+
+  <div class="grid">
+
+    <unit class="unit w-2-5"><%= f.label :password %></unit>
+    <div class="unit w-3-5"><%= f.password_field :password %></div>
+  </div>
+
+  <div class="grid">
+
+    <unit class="unit w-2-5"><%= f.label :password_confirmation %></unit>
+    <div class="unit w-3-5"><%= f.password_field :password_confirmation %></div>
+  </div>
+  <div class="grid">
+    <div class="unit"></div>
+  </div>
+
+  <div class="grid">
+    <div class="unit w-2-5"></div>
+    <div class="unit w-3-5"><%= f.submit yield(:submit_text) %></div>
+  </div>
+  <% end %>

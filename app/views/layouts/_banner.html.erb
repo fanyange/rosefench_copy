@@ -7,16 +7,9 @@
     |
     <%= link_to "退出", logout_path, method: :delete %>
     <% else %>
-    <%= form_for :session, url: sessions_path, html: { id: 'login' } do |f| %>
-    <%= f.label :email, "电子邮箱："  %>
-    <%= f.email_field :email %>
-    <%= f.label :password, "密码：" %>
-    <%= f.password_field :password %>
-    <%= f.submit id: "hidden-submit" %>
-    <%= link_to "登录", '#' %>
+    <%= link_to "登录", login_path %>
     |
     <%= link_to "注册", signup_path %>
-    <% end %>
     <% end %>
   </div>
 </div>

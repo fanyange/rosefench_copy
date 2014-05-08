@@ -69,4 +69,27 @@ describe "User Pages" do
       end
     end
   end
+
+  describe "edit user profile" do
+    let(:user) { FactoryGirl.create(:user) }
+
+    describe "without logging in or wrong logged in user" do
+      before do
+        # log_out user
+        visit edit_user_path(user)
+      end
+
+      it { should have_selector('#session_email') }
+      it { should have_selector('.flash>.error', "Please first log in") }
+    end
+
+    describe "with valid user logged in" do
+      before do
+        log_in user
+        visit edit_user_path(user)
+      end
+
+      it { should have_selector('#user_email') }
+    end
+  end
 end
