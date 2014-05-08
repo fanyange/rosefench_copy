@@ -18,6 +18,9 @@ gem 'spring',        group: :development
 group :test, :development do
   gem 'rspec-rails'
   gem 'guard-rspec'
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
 end
 
 gem 'terminal-notifier-guard', group: :development
