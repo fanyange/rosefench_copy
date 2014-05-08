@@ -17,11 +17,15 @@ gem 'spring',        group: :development
 
 group :test, :development do
   gem 'rspec-rails'
+  gem 'guard-rspec'
 end
+
+gem 'terminal-notifier-guard', group: :development
 
 group :test do
   gem "capybara"
   gem "factory_girl_rails"
+
 end
 
 gem 'nokogiri'
