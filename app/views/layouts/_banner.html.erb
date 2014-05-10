@@ -2,7 +2,7 @@
   <div class="container">
     <div class="info pull-left">欢迎访问中国观鸟组织联合行动平台网站！</div>
     <div class="login pull-right">
-    <% if signed_in? %>
+    <% if logged_in? %>
     <%= link_to current_user.name, current_user %>
     |
     <%= link_to "退出", logout_path, method: :delete %>

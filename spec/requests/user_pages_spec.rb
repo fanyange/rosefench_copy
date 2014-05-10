@@ -75,21 +75,30 @@ describe "User Pages" do
 
     describe "without logging in or wrong logged in user" do
       before do
-        # log_out user
         visit edit_user_path(user)
       end
 
       it { should have_selector('#session_email') }
       it { should have_selector('.flash>.error', "Please first log in") }
-    end
 
-    describe "with valid user logged in" do
-      before do
-        log_in user
-        visit edit_user_path(user)
+      describe "then log in with valid user" do
+        before do
+          log_in user
+        end
+
+        it { should have_selector('#user_email') }
       end
 
-      it { should have_selector('#user_email') }
     end
+      describe "and save the new information" do
+        before do
+          log_in user
+          visit edit_user_path(user)
+          fill_in "Email", with: 'another@example.com'
+          click_button "Update Profile"
+        end
+
+        it { should have_selector('.flash>.success') }
+      end
   end
 end
