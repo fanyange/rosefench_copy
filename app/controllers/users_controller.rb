@@ -49,8 +49,10 @@ class UsersController < ApplicationController
 
   def correct_user
     @user = User.find(params[:id])
-    flash[:error] = "This user is not you."
-    redirect_to root_url unless current_user?(@user)
+    unless current_user?(@user)
+      flash[:error] = "This user is not you."
+      redirect_to root_url
+    end
   end
 
   def store_location
